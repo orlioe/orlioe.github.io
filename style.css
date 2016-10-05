@@ -1,0 +1,362 @@
+*, *:before, *:after { box-sizing: border-box; }
+img {max-width: 100%;}
+body {
+     font-size:100%;
+     min-width: 300px;
+     font-family: 'Muli', sans-serif;
+     max-width: 80em;
+     margin:0 auto;
+}
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+h1 {
+    font-size: 1.6em;
+    line-height: 1.5em;
+    color:white;
+}
+h3 {
+    font-size: 1.2em;
+}
+/*-----------------------------Header------------------------------------*/
+.top {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position:relative;
+}
+#main {
+    line-height: 1.5em;
+    text-align: center;
+}
+.logo {
+    float:left;
+    width:70%;
+}
+.logo a {
+    position:absolute;
+}
+
+.backgr {
+    clear:both;
+    z-index: 1;
+    padding:0;
+    margin:0;
+    height: 305px;
+    width: 100%;
+    background: url("./images/backgr.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+/* ------------------------------navigation-------------------------- */
+#nav {
+    text-align: right;
+    width: 70px;
+    height: 82px;
+    float:right;
+    padding:0;
+    margin: 0;
+    z-index: 2
+}
+#nav li a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.4em;
+    display: block;
+    padding:16px 0;
+}
+#nav:not( :target ) > a:first-of-type, #nav:target > a:last-of-type {
+    display: block;
+}
+
+#nav > a {
+    display: none;
+}
+#nav li
+{
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 100%;
+
+}
+#nav li a:hover {
+    background-color: black;
+}
+#nav > ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    background-color: rgba(38, 35, 34, 0.95);
+    display:none;
+    position: absolute;
+    top:82px;
+    right:0;
+    width: 100%
+}
+ #nav:target > ul {
+    display: block;
+}
+
+
+/*----------------------------------------Main content-----------------------------------------*/
+
+section {
+    width:100%;
+}
+.heading {
+    background: black;
+    color: white;
+    padding: 0.3em 0;
+    margin-bottom: 1.5em;
+    text-align: center;
+} 
+#welcome {
+    background-color: black;
+    text-align: center;
+    padding: 0.1em 0.4em;
+    margin-bottom: 1em;
+}
+#welcome a{
+    border: solid black 1px;
+    border-radius: 25px; 
+    font-size:1.2em;
+    text-decoration: none;
+    color:white;
+    background-color: #166852;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+#welcome a:hover {
+    background-color: #50a192;
+    color:black;
+}
+.intro a {
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+    padding: 0.5em;
+    border: solid black  1px;
+}
+.intro a:hover {
+    border: solid #50a192 2px;
+}
+.intro, #about {
+    margin:2em auto;
+}
+.about a {
+    text-decoration: none;
+    color:#166852 ;
+    font-weight: bold;
+}
+.about a:hover {
+    color: #50a192;
+}
+/*-------------------------------------------Gallery---------------------------*/
+#gallery {
+    width: 100%;
+    margin:0 auto;
+    padding: 0;
+    
+}
+.right-col, .left-col {
+    width:100%;
+    min-width: 300px;
+    padding: 1px;
+    margin: auto;
+}
+/*----------------------------------Piano works----------------------------------------*/
+.works-list *{
+    padding: 1em;
+}
+
+/*-----------------------------------Contact form------------------------------------*/
+#contact-form {
+    display: block;
+    border-radius: 5px;
+    background: #CBC9C9;
+    width:90%;
+    margin:1em auto;
+    line-height: 2.5em;
+    font-weight: bold;
+    max-width: 400px;
+    font-size: 1em;
+}
+input, textarea {
+    width:80%;
+    font-size:1.1em;
+}
+
+#submit {
+    width: 60%;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    font-size: 1.2em;
+    background-color: #166852;
+    color:white;
+    padding: 0.5em;
+}
+#submit:hover {
+    background-color: #50a192;
+    color:black;
+}
+/*----------------------------------------Contact-------------------------------------------*/
+iframe {
+    width: 90%;
+    min-width: 305px;
+    max-width: 700px;
+}
+#address {
+    margin: 1em .5em;
+}
+#address a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+table{
+    margin: 1em auto;
+}
+td {
+    padding:1em;
+    text-align: left;
+}
+td:first-child {
+    font-weight: bold;
+}
+tr:last-child td:last-child{
+    color:red;
+}
+/*----------------------------------Testimonials---------------------------------------*/
+#testimonials div{
+    padding: 5px 20px 5px 10px;
+}
+blockquote {
+    max-width: 48em;
+    width: 100%;
+    margin:0 3px;
+    
+
+}
+
+/*--------------------------------------Footer-------------------------------------*/
+footer {
+    background-color: rgb(38, 35, 34);
+    width: 100%;
+    height: 62px;
+    clear:both;
+    margin-top:3em;
+}
+#social img{
+    padding:15px 12px;
+}
+#social {
+    width:40%;
+    float:left;
+    height: 62px;   
+ }
+#copy {
+    width: 60%;
+    float:right;
+    height: 100%;
+    
+}
+#copy p {
+    color:white;
+    text-align: right;
+    font-size: .8em;
+    padding: 12px 10px;
+}
+.clear {
+    clear:both;
+}
+
+@media only screen and ( min-width: 40em){
+    .left-col, .right-col {
+        width: 49%;
+    }
+
+    .left-col {
+        float:left;
+    }
+    .right-col {
+        float:right;
+    }
+    .works-list img{
+        float:right;
+        width:40%;
+        max-width:325px;
+    }
+    .works-list p{
+        float:left;
+        width:60%;
+    }
+    blockquote {
+        box-shadow: 10px 10px 5px #166852;
+        background: #50a192;
+        border-left: 6px solid #166852;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 1em;
+    }
+    #intro-1 {
+        float:right;
+        width:50%;
+    }
+    #intro-1 {
+        float:left;
+        width:50%;
+    }
+    #about {
+        clear:both;
+        margin-top: 2em;
+    }
+}
+@media only screen and (min-width: 50em){
+    .logo {
+        width:30%;
+    }
+    #nav li a {
+        font-size: 0.95em;
+        color:black;
+        padding:31px 0;
+    }
+    #nav li a:hover{
+        color:white;
+        background-color: black;
+    }
+    #nav:not( :target ) > a:first-of-type, #nav:target > a:last-of-type {
+        display: none;
+    }
+    #nav li {
+        width: 20%;
+        height: 82px;
+    }
+    #nav > ul {
+        background-color: white;
+        display: inline-block;
+        top:0;
+        width: 65%;
+    }
+}
+@media only screen and ( min-width: 60em){
+    aside {
+        float:right;
+        width:30%;
+    }
+    #works, #address {
+        float:left;
+        width:65%;
+    }
+    .testimonial-2 {
+        float:right;
+    }
+    #nav li a {
+            font-size: 1.1em;
+            padding: 30px 0;
+    }
+
+}
